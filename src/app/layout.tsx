@@ -33,8 +33,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    creator: '@scastiel',
-    site: '@scastiel',
+    creator: '@pavanpaik',
+    site: '@pavanpaik',
     images: `/banner.png`,
     title: 'Spliit · Share Expenses with Friends & Family',
     description:
@@ -124,13 +124,13 @@ function Content({ children }: { children: React.ReactNode }) {
             <span>
               {t.rich('Footer.builtBy', {
                 author: (txt) => (
-                  <a href="https://scastiel.dev" target="_blank" rel="noopener">
+                  <a href="https://github.com/pavanpaik" target="_blank" rel="noopener">
                     {txt}
                   </a>
                 ),
                 source: (txt) => (
                   <a
-                    href="https://github.com/spliit-app/spliit/graphs/contributors"
+                    href="https://github.com/pavanpaik/spliit"
                     target="_blank"
                     rel="noopener"
                   >
