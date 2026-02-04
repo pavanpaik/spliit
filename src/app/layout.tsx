@@ -60,7 +60,7 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  themeColor: '#047857',
+  themeColor: '#4f46e5',
 }
 
 function Content({ children }: { children: React.ReactNode }) {
@@ -75,7 +75,7 @@ function Content({ children }: { children: React.ReactNode }) {
           <h1>
             <Image
               src="/logo-with-text.png"
-              className="m-1 h-auto w-auto"
+              className="m-1 h-auto w-auto logo-custom"
               width={(35 * 522) / 180}
               height={35}
               alt="Spliit"
@@ -106,13 +106,13 @@ function Content({ children }: { children: React.ReactNode }) {
 
       <div className="pt-16 flex-1 flex flex-col">{children}</div>
 
-      <footer className="sm:p-8 md:p-16 sm:mt-16 sm:text-sm md:text-base md:mt-32 bg-slate-50 dark:bg-card border-t p-6 mt-8 flex flex-col sm:flex-row sm:justify-between gap-4 text-xs [&_a]:underline">
+      <footer className="sm:p-8 md:p-16 sm:mt-16 sm:text-sm md:text-base md:mt-32 footer-custom p-6 mt-8 flex flex-col sm:flex-row sm:justify-between gap-4 text-xs [&_a]:underline">
         <div className="flex flex-col space-y-2">
           <div className="sm:text-lg font-semibold text-base flex space-x-2 items-center">
             <Link className="flex items-center gap-2" href="/">
               <Image
                 src="/logo-with-text.png"
-                className="m-1 h-auto w-auto"
+                className="m-1 h-auto w-auto logo-custom"
                 width={(35 * 522) / 180}
                 height={35}
                 alt="Spliit"
@@ -156,7 +156,7 @@ export default async function RootLayout({
   const messages = await getMessages()
   return (
     <html lang={locale} suppressHydrationWarning>
-      <ApplePwaSplash icon="/logo-with-text.png" color="#027756" />
+      <ApplePwaSplash icon="/logo-with-text.png" color="#4f46e5" />
       <body className="min-h-[100dvh] flex flex-col items-stretch bg-slate-50 bg-opacity-30 dark:bg-background">
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider

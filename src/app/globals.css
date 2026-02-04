@@ -65,3 +65,12 @@
 .landing-header strong {
   @apply font-bold text-transparent;
 }
+
+.logo-custom {
+  /* Tint green logo to indigo/blue using filters */
+  filter: hue-rotate(70deg) saturate(1.5) brightness(1.2);
+}
+
+.footer-custom {
+  @apply bg-slate-50 dark:bg-slate-950 border-t;
+}
